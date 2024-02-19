@@ -4,11 +4,12 @@
 
 files that I have worked:
 
-- src > auth > \*
-- src > Components > feedback > \*
-- src > Components > LAYOUT > MAIN_LAYOUT > \*
-- src > Components > COMMON > \*
-- src > Components > login > \*
-- src > Components > context > \*
+- src > auth > *
+- src > components > feedback > *
+- src > components > layout > main_layout > *
+- src > components > common > *
+- src > components > login > *
+- src > components > context > *
 - src > controller > user
 - src > utils > nodemailer
+
