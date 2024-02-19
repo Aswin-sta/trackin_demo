@@ -1,3 +1,4 @@
+//display feedback form and handle submit
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import DynamicFormHandler from "./DynamicFormHandler";
@@ -22,16 +23,15 @@ const FeedbackFormHandler = () => {
       } catch (error) {
         console.error("Error while fetching data:", error);
 
-        navigate("/error"); // You can replace '/error' with your desired route
+        navigate("/");
       }
     };
     fetchData();
   }, [id, navigate]);
 
   if (!feedbackTemplateData) {
-    // Redirect to a specific route if data from the API is null
-    navigate("/not-found"); // You can replace '/not-found' with your desired route
-    return null; // You can return a loading indicator or null here
+    navigate("/");
+    return null;
   }
 
   return (

@@ -1,15 +1,5 @@
 import { createContext, ReactNode, useState, useEffect } from "react";
-
-type AuthState = {
-  isAuthenticated: boolean;
-  userRole: string | null;
-  userName: string | null;
-};
-
-type AuthContextType = {
-  authState: AuthState;
-  setAuthState: React.Dispatch<React.SetStateAction<AuthState>>;
-};
+import { AuthContextType, AuthState } from "./types";
 
 const initialAuthState: AuthState = {
   isAuthenticated: false,
